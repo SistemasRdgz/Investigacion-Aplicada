@@ -1,4 +1,4 @@
-# Aplicación PHP con Login simulado y Docker
+# Aplicación Web PHP con Login simulado, Docker, Kubernets y Escalonado Horizontal 
 
 Descripción breve:
 Este proyecto consiste en el desarrollo y despliegue de una aplicación web en PHP que implementa un sistema básico de autenticación utilizando variables de sesión.
@@ -65,10 +65,14 @@ CMD ["apache2-foreground"]
 
 Construcción de la Imagen
 
-Ejecutar en la carpeta del proyecto:
-
 ```bash
 docker build -t php-login-app .
+```
+
+Ejecutar el contenedor:
+
+```bash
+docker run --rm -p 8080:80 php-login-app .
 ```
 
 Acceder desde el navegador:
