@@ -1,0 +1,11 @@
+﻿apiVersion: v1
+kind: Service
+metadata:
+  name: php-login-app-lb
+spec:
+  type: LoadBalancer
+  selector:
+    app: php-login-app
+  ports:
+    - port: 80
+      targetPort: 80
