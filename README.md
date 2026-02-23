@@ -72,7 +72,7 @@ docker build -t php-login-app .
 Ejecutar el contenedor:
 
 ```bash
-docker run --rm -p 8080:80 php-login-app .
+docker run -d -p 8080:80 --name php-login-container php-login-app
 ```
 
 Acceder desde el navegador:
